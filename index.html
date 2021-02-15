@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCoding</title>
+    <link rel="shortcut icon" href="img/Logo/LOGO_GoCoding.png">
+    <link rel="stylesheet" href="tools/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <!--Menu de navegación-->
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <a href="index.html"><h1 class="animate__animated animate__lightSpeedInRight" >GoCoding</h1></a>
+            </div>
+            <div class="bar-icon">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-lista">
+                <ul class="lista">
+                    <li><a href="index.html" data-text="Home">Home</a></li>
+                    <li><a href="nosotros.html" data-text="Nosotros">Nosotros</a></li>
+                    <li><a href="#" data-text="Foro">Foro</a></li>
+                    <li><a href="contacto.html" data-text="Contacto">Contacto</a></li>
+                </ul>
+            </div> 
+        </nav>
+        <!--Imágen de fondo-->
+        <div class="contenedor-header">
+            <div class="texto-titulo">
+                <img class="animate__animated animate__fadeIn icono" src="img/iconos/icon - coding.png" alt="">
+                <h2 class="animate__animated animate__fadeIn titulo">¡Conviértete en un desarrollador!</h2>
+            </div>
+            <p class="animate__animated animate__fadeIn sub-titulo">Guiate y analiza los lenguajes de programación, los servicios y herramientas que existen para ello!</p>
+            <button class="animate__flipInX btn-lenguajes" id="btn-lenguajes">Exploremos este mundo!</button>
+        </div>
+    </header>
+    <!--Segunda parte de home-->
+    <div class="contenedor" id="contenedor">
+        <div class="titulo">Explora los lenguajes</div>
+        <!--Sección de filtros-->
+        <section class="filtros">
+            <div class="lista-filtros">
+                <!--Buscador-->
+                <div class="search">
+                    <span class="icon"><i class="fa fa-search"></i></span>    
+                    <input type="text" class="btn-search" id="btn-search" placeholder="Buscar">
+                </div>
+                <!--Botones de los filtros-->
+                <ul class="lista">
+                    <li class="item">
+                        <button category="mostrar-todo" class="item-filtro">Todo</button>
+                    </li>
+                    <li class="item">
+                        <button category="facil-aprendizaje" class="item-filtro"><img src="img//iconos/pencil.png" alt=""> Fácil Aprendizaje </button>
+                    </li>
+                    <li class="item">
+                        <button category="demandado" class="item-filtro"><img src="img//iconos/fire.png" alt=""> Demandado </button>
+                    </li>
+                    <li class="item">
+                        <button category="fronted" class="item-filtro"><img src="img//iconos/binary-code.png" alt=""> Fronted </button>
+                    </li>
+                    <li class="item">
+                        <button category="backend" class="item-filtro"><img src="img//iconos/database-storage.png" alt=""> Backend </button>
+                    </li>
+                    <li class="item">
+                        <button category="desarrollo-mobil" class="item-filtro"><img src="img//iconos/smartphone.png" alt=""> Desarrollo Móbil </button>
+                    </li>
+                    <li class="item">
+                        <button category="desarrollo-web" class="item-filtro"><img src="img//iconos/pc.png" alt=""> Desarrollo Web </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Tarjetas con los lenguajes-->
+        <section class="lenguajes">
+            <div category="demandado fronted desarrollo-web" class="animate__animated tarjeta html">
+                <div class="cara cara1">
+                    <div class="contenido">
+                        <img src="img/lenguajes/HTML-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="cara cara2">
+                    <h2>HTML</h2>
+                </div>
+            </div>
+            <div category="demandado facil-aprendizaje fronted desarrollo-web" class="animate__animated tarjeta css">
+                <div class="cara cara1">
+                    <div class="contenido">
+                        <img src="img/lenguajes/CSS-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="cara cara2">
+                    <h2>CSS</h2>
+                </div>
+            </div>
+            <div category="demandado fronted desarrollo-web" class="animate__animated tarjeta js">
+                <div class="cara cara1">
+                    <div class="contenido">
+                        <img src="img/lenguajes/JavaScript-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="cara cara2">
+                    <h2>JavaScript</h2>
+                </div>
+            </div>
+            <div category="fronted desarrollo-web" class="animate__animated tarjeta jquery">
+                <div class="cara cara1">
+                    <div class="contenido">
+                        <img src="img/lenguajes/jquery-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="cara cara2">
+                    <h2>Jquery</h2>
+                </div>
+            </div>
+            <div category="fronted desarrollo-web" class="animate__animated tarjeta sass">
+                <div class="cara cara1">
+                    <div class="contenido">
+                        <img src="img/lenguajes/SASS-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="cara cara2">
+                    <h2>SASS</h2>
+                </div>
+            </div>
+        </section>
+        <!--Pie de página-->
+        <footer>
+            <div class="copy">
+                <p><span class="far fa-copyright"></span> GoCoding - Todos los derechos reservados</p>
+            </div>
+            <div class="redes-sociales">
+                <a href="#"><span class="fab fa-facebook-square"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-patreon"></span></a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Pop-ups de lenguajes -->
+
+        <!-- EL que pone en negro -->
+        <div class="modal">
+
+            <!-- Pop-up -->
+            <div class="modal-item html">
+
+                <!-- Imagen y Logo - Background -->
+                <div class="bg-lenguaje html">
+                    <img class="bg" src="img/lenguajes/html_bg.jpg" alt="">
+                    <img class="bg-logo" src="img/lenguajes/HTML-logo.png" alt="">
+                </div>
+
+                <!-- Botones -->
+                <div class="buttons-modal">
+                    <button class="btn-popup" id="caracteristicas">Características</button>
+                    <button class="btn-popup" id="documentacion">Documentación</button>
+                </div>
+                <!-- Seccion de caracteristicas -->
+                <section class="caracteristicas" id="caracteristicas">
+
+                    <!-- Esta sera la parte de las barras: Aprendizaje, Futuro... -->
+                    <table class="detalles">
+                        <tbody>
+                            <tr>
+                                <td><img src="img/iconos/pencil.png" alt=""></td>
+                                <td class="llave">Aprendizaje: </td>
+                                <td class="valor">
+                                    <span class="nivel aprendizaje">Difícil</span>
+                                    <div class="ranking aprendizaje">
+                                        <div class="nivel-ranking aprendizaje"></div>
+                                    </div>
+                                    <span class="nivel">Fácil</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="img/iconos/fire.png" alt=""></td>
+                                <td class="llave">Futuro: </td>
+                                <td class="valor">
+                                    <span class="nivel futuro">Poca</span>
+                                    <div class="ranking futuro">
+                                        <div class="nivel-ranking futuro"></div>
+                                    </div>
+                                    <span class="nivel">Difícil</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/binary-code.png" alt=""></td>
+                                <td class="llave"><span>Lenguaje:</span> </td>
+                                <td class="valor"><span class="nivel">Frontend</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/smartphone.png" alt=""></td>
+                                <td class="llave"><span>Entorno:</span> </td>
+                                <td class="valor"><span class="nivel">Web</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Informacion acerca del lenguaje -->
+
+                    <div class="sobre-lenguaje">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum esse dolorum unde cum pariatur qui praesentium quibusdam at officiis eos eaque repellendus hic, ea rem dolorem autem alias eum facere voluptatum! Deserunt inventore corporis, nobis quibusdam magnam veritatis consequatur quis facere officia quod delectus nam non saepe, libero dolore.
+                    </div>
+
+                </section>
+
+                <!-- Seccion de Documentacion -->
+                
+                <section class="documentacion" id="documentacion">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, consequuntur facere! Porro cupiditate natus, a, facere deserunt inventore nisi libero enim odit tempora, distinctio incidunt facilis rerum id illo fugit praesentium et. Soluta neque, doloribus molestias accusamus hic magni laborum adipisci alias provident itaque recusandae. Facere architecto, perferendis sed saepe porro nemo voluptate eligendi? Nulla architecto praesentium, iste nostrum fugit eligendi in totam et modi tempore accusantium laboriosam nam quas repellat ipsam ratione omnis saepe dignissimos doloribus! Cupiditate, eum saepe aliquid sapiente adipisci assumenda nulla facere quam doloribus natus. Consectetur nulla, ducimus atque alias sed possimus deleniti. Voluptatem, doloribus ab?</p>
+                </section>
+
+            </div>
+        </div>
+            
+        <div class="modal">
+            <div class="modal-item css">
+
+                
+                <div class="bg-lenguaje">
+                    <img class="bg" src="img/lenguajes/css_bg.jpg" alt="">
+                    <img class="bg-logo" src="img/lenguajes/CSS-logo.png" alt="">
+                </div>
+
+                <div class="buttons-modal">
+                    <button class="btn-popup" id="caracteristicas">Características</button>
+                    <button class="btn-popup" id="documentacion">Documentación</button>
+                </div>
+
+                <section class="caracteristicas">
+
+                    <table class="detalles">
+                        <tbody>
+                            <tr>
+                                <td><img src="img/iconos/pencil.png" alt=""></td>
+                                <td class="llave">Aprendizaje: </td>
+                                <td class="valor">
+                                    <span class="nivel aprendizaje">Difícil</span>
+                                    <div class="ranking aprendizaje">
+                                        <div class="nivel-ranking aprendizaje"></div>
+                                    </div>
+                                    <span class="nivel">Fácil</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="img/iconos/fire.png" alt=""></td>
+                                <td class="llave">Futuro: </td>
+                                <td class="valor">
+                                    <span class="nivel futuro">Poca</span>
+                                    <div class="ranking futuro">
+                                        <div class="nivel-ranking futuro"></div>
+                                    </div>
+                                    <span class="nivel">Difícil</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/binary-code.png" alt=""></td>
+                                <td class="llave"><span>Lenguaje:</span> </td>
+                                <td class="valor"><span class="nivel">Frontend</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/smartphone.png" alt=""></td>
+                                <td class="llave"><span>Entorno:</span> </td>
+                                <td class="valor"><span class="nivel">Web</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="sobre-lenguaje">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum esse dolorum unde cum pariatur qui praesentium quibusdam at officiis eos eaque repellendus hic, ea rem dolorem autem alias eum facere voluptatum! Deserunt inventore corporis, nobis quibusdam magnam veritatis consequatur quis facere officia quod delectus nam non saepe, libero dolore.
+                    </div>
+
+                </section>
+
+                <section class="documentacion">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, consequuntur facere! Porro cupiditate natus, a, facere deserunt inventore nisi libero enim odit tempora, distinctio incidunt facilis rerum id illo fugit praesentium et. Soluta neque, doloribus molestias accusamus hic magni laborum adipisci alias provident itaque recusandae. Facere architecto, perferendis sed saepe porro nemo voluptate eligendi? Nulla architecto praesentium, iste nostrum fugit eligendi in totam et modi tempore accusantium laboriosam nam quas repellat ipsam ratione omnis saepe dignissimos doloribus! Cupiditate, eum saepe aliquid sapiente adipisci assumenda nulla facere quam doloribus natus. Consectetur nulla, ducimus atque alias sed possimus deleniti. Voluptatem, doloribus ab?</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-item js">
+
+                
+                <div class="bg-lenguaje">
+                    <img class="bg" src="img/lenguajes/javascript_bg.jpg" alt="">
+                    <img class="bg-logo" src="img/lenguajes/JavaScript-logo.png" alt="">
+                </div>
+
+                <div class="buttons-modal">
+                    <button class="btn-popup" id="caracteristicas">Características</button>
+                    <button class="btn-popup" id="documentacion">Documentación</button>
+                </div>
+
+                <section class="caracteristicas">
+
+                    <table class="detalles">
+                        <tbody>
+                            <tr>
+                                <td><img src="img/iconos/pencil.png" alt=""></td>
+                                <td class="llave">Aprendizaje: </td>
+                                <td class="valor">
+                                    <span class="nivel aprendizaje">Difícil</span>
+                                    <div class="ranking aprendizaje">
+                                        <div class="nivel-ranking aprendizaje"></div>
+                                    </div>
+                                    <span class="nivel">Fácil</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="img/iconos/fire.png" alt=""></td>
+                                <td class="llave">Futuro: </td>
+                                <td class="valor">
+                                    <span class="nivel futuro">Poca</span>
+                                    <div class="ranking futuro">
+                                        <div class="nivel-ranking futuro"></div>
+                                    </div>
+                                    <span class="nivel">Difícil</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/binary-code.png" alt=""></td>
+                                <td class="llave"><span>Lenguaje:</span> </td>
+                                <td class="valor"><span class="nivel">Frontend</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/smartphone.png" alt=""></td>
+                                <td class="llave"><span>Entorno:</span> </td>
+                                <td class="valor"><span class="nivel">Web</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="sobre-lenguaje">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum esse dolorum unde cum pariatur qui praesentium quibusdam at officiis eos eaque repellendus hic, ea rem dolorem autem alias eum facere voluptatum! Deserunt inventore corporis, nobis quibusdam magnam veritatis consequatur quis facere officia quod delectus nam non saepe, libero dolore.
+                    </div>
+
+                </section>
+
+                <section class="documentacion">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, consequuntur facere! Porro cupiditate natus, a, facere deserunt inventore nisi libero enim odit tempora, distinctio incidunt facilis rerum id illo fugit praesentium et. Soluta neque, doloribus molestias accusamus hic magni laborum adipisci alias provident itaque recusandae. LLLLLSSSSSSSDDDDDDDDD Facere architecto, perferendis sed saepe porro nemo voluptate eligendi? Nulla architecto praesentium, iste nostrum fugit eligendi in totam et modi tempore accusantium laboriosam nam quas repellat ipsam ratione omnis saepe dignissimos doloribus! Cupiditate, eum saepe aliquid sapiente adipisci assumenda nulla facere quam doloribus natus. Consectetur nulla, ducimus atque alias sed possimus deleniti. Voluptatem, doloribus ab?</p>
+                </section>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-item jquery">
+
+                
+                <div class="bg-lenguaje">
+                    <img class="bg" src="img/lenguajes/jquery_bg.jpg" alt="">
+                    <img class="bg-logo" src="img/lenguajes/jquery-logo.png" alt="">
+                </div>
+
+                <div class="buttons-modal">
+                    <button class="btn-popup" id="caracteristicas">Características</button>
+                    <button class="btn-popup" id="documentacion">Documentación</button>
+                </div>
+
+                <section class="caracteristicas">
+
+                    <table class="detalles">
+                        <tbody>
+                            <tr>
+                                <td><img src="img/iconos/pencil.png" alt=""></td>
+                                <td class="llave">Aprendizaje: </td>
+                                <td class="valor">
+                                    <span class="nivel aprendizaje">Difícil</span>
+                                    <div class="ranking aprendizaje">
+                                        <div class="nivel-ranking aprendizaje"></div>
+                                    </div>
+                                    <span class="nivel">Fácil</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="img/iconos/fire.png" alt=""></td>
+                                <td class="llave">Futuro: </td>
+                                <td class="valor">
+                                    <span class="nivel futuro">Poca</span>
+                                    <div class="ranking futuro">
+                                        <div class="nivel-ranking futuro"></div>
+                                    </div>
+                                    <span class="nivel">Difícil</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/binary-code.png" alt=""></td>
+                                <td class="llave"><span>Lenguaje:</span> </td>
+                                <td class="valor"><span class="nivel">Frontend</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/iconos/smartphone.png" alt=""></td>
+                                <td class="llave"><span>Entorno:</span> </td>
+                                <td class="valor"><span class="nivel">Web</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="sobre-lenguaje">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum esse dolorum unde cum pariatur qui praesentium quibusdam at officiis eos eaque repellendus hic, ea rem dolorem autem alias eum facere voluptatum! Deserunt inventore corporis, nobis quibusdam magnam veritatis consequatur quis facere officia quod delectus nam non saepe, libero dolore.
+                    </div>
+
+                </section>
+
+                <section class="documentacion">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, consequuntur facere! Porro cupiditate natus, a, facere deserunt inventore nisi libero enim odit tempora, distinctio incidunt facilis rerum id illo fugit praesentium et. Soluta neque, doloribus molestias accusamus hic magni laborum adipisci alias provident itaque recusandae. Facere architecto, perferendis sed saepe porro nemo voluptate eligendi? Nulla architecto praesentium, iste nostrum fugit eligendi in totam et modi tempore accusantium laboriosam nam quas repellat ipsam ratione omnis saepe dignissimos doloribus! Cupiditate, eum saepe aliquid sapiente adipisci assumenda nulla facere quam doloribus natus. Consectetur nulla, ducimus atque alias sed possimus deleniti. Voluptatem, doloribus ab?</p>
+                </section>
+            </div>
+        </div>
+    
+
+
+
+
+    <!--Documentos js para los efectos-->
+    <script src="tools/Jquery/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

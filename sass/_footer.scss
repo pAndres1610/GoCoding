@@ -1,0 +1,35 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 0px 20px 0px;
+    .copy{
+        color: #4e4e4e;
+    }
+    .redes-sociales{
+        span{
+            font-size: 30px;
+            margin-right: 20px;
+            opacity: .5;
+            &:hover{
+                opacity: initial;
+                transition: 0.3s;
+            }
+        }
+        span.fa-facebook-square{
+            color: #1791E3;
+        }
+        span.fa-instagram{
+            color:#00ebe3;
+        }
+        span.fa-twitter{
+            color: #3DD4FC;
+        }
+        span.fa-patreon{
+            color: #FF4600;
+        }
+    }
+}
+.margen{
+    margin-bottom: 500px;
+}
